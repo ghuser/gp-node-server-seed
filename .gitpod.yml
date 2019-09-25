@@ -1,0 +1,7 @@
+image: node:10-alpine
+# We could add the init and entrypoint of a custom dockerfile inside .gitpod.yml, so no need for Dockerfile for simple things.
+# image:
+#   file: Dockerfile
+tasks:
+  - init: npm install
+    command: npm start
